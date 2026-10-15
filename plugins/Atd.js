@@ -78,6 +78,9 @@ Sila taip keyword yang diperlukan 👇
 
 bot(
   {
+
+    bot(
+  {
     pattern: 'menu',
     desc: 'ATD Auto Menu',
     onlyGroup: true,
@@ -85,7 +88,7 @@ bot(
   },
   async (message) => {
     if (!atdOnly(message)) return
-    return await message.send(Menu)
+    return await message.send(MENU)
   }
 )
 
